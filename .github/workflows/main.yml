@@ -14,4 +14,4 @@ jobs:
         server: ${{ secrets.server }}
         username: ${{ secrets.username }}
         password: ${{ secrets.pass }}
-        dry-run: true
+        local-dir: \home\shuhanmirza\public_html
