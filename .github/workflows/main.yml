@@ -14,4 +14,4 @@ jobs:
         server: ${{ secrets.server }}
         username: ${{ secrets.username }}
         password: ${{ secrets.pass }}
-        remote-dir: /home/shuhanmirza/public_html/
+        server-dir: /home/shuhanmirza/public_html/
