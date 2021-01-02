@@ -56,7 +56,7 @@
                         <div class="logo">
                             <a class="logo-wrap" href="#body">
                                 <!-- <span style="color: salmon;">SHUHAN</span>MIRZA -->
-                                <img class="logo-img" src="img/logo_2.gif" alt="Asentus Logo">
+                                <img class="logo-img" src="img/header_logo.gif" alt="Asentus Logo">
                             </a>
                         </div>
                         <!-- End Logo -->
@@ -67,9 +67,9 @@
                         <div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
+                                <!-- <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Experience</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li> -->
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -106,6 +106,10 @@
             </div>
         </div>
         <!--========== SLIDER ==========-->
+
+
+        
+
 
         <!--========== PAGE LAYOUT ==========-->
         <!-- About -->
@@ -271,7 +275,7 @@
         <!-- End Work -->
 
         <!-- Clients -->
-        <div class="bg-color-sky-light">
+        <div id="clients" class="bg-color-sky-light">
             <div class="content-lg container">
                 <!-- Swiper Clients -->
                 <div class="swiper-slider swiper-clients">
@@ -304,14 +308,16 @@
         <!-- End Clients -->
 
         <!-- Promo Banner -->
-        <div class="promo-banner parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/01.jpg">
+        <!-- <div id="promo_banner" class="promo-banner parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/01.jpg">
             <div class="container-sm content-lg">
                 <h2 class="promo-banner-title">Displaying the Result</h2>
                 <p class="promo-banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
             </div>
-        </div>
+        </div> -->
         <!-- End Promo Banner -->
-            
+        
+
+
         <!-- Contact -->
         <div id="contact">
             <div class="bg-color-sky-light">
@@ -355,10 +361,10 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <!-- <span style="color: salmon;">SHUHAN</span>MIRZA -->
-                        <img class="footer-logo" src="img/logo.gif" alt="Acecv Logo">
+                        <img class="footer-logo" src="img/footer_logo.gif">
                     </div>
                     <div class="col-xs-6 text-right sm-text-left">
-                        <p class="margin-b-0"><a class="fweight-700" href="http://keenthemes.com/preview/acecv/">Acecv</a> Theme Powered by: <a class="fweight-700" href="http://www.keenthemes.com/">KeenThemes.com</a></p>
+                        <p class="margin-b-0"> Theme Powered by: <a class="fweight-700" href="http://www.keenthemes.com/">KeenThemes.com</a></p>
                     </div>
                 </div>
                 <!--// end row -->
@@ -392,4 +398,15 @@
 
     </body>
     <!-- END BODY -->
+
+
+    <script>
+
+    $('#about').hide()
+    $('#experience').hide()
+    $('#work').hide()
+    $('#clients').hide()
+
+
+    </script>
 </html>
