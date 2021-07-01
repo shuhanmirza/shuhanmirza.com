@@ -1,0 +1,19 @@
+version: '3.1'
+services:
+    webserver:
+        build:
+            context: ./apache2-debug/
+            dockerfile: Dockerfile
+        restart: always
+        volumes:
+            - ./:/var/www/html
+        ports:
+            - "8080:80"
+            - "8443:443" 
+        networks:
+            - php
+networks:
+    php:
+    
+volumes:
+    data:
