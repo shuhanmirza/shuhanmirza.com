@@ -68,8 +68,46 @@ crawl_google_scholar_profile("https://scholar.google.com/citations?user=xwSEAPsA
 ?>
 
 <?php
-$main_html_file = "main.html";
-$main_html = new DOMDocument();
-@$main_html->loadHTMLFile($main_html_file);
-echo $main_html->saveHTML()
+
+function load_html($file_path){
+    $html_file = $file_path;
+    $html_dom = new DOMDocument();
+    @$html_dom->loadHTMLFile($html_file);
+    echo $html_dom->saveHTML();
+}
+
+echo '<!DOCTYPE html>';
+echo '<html lang="en" class="no-js">';
+
+load_html('html/head.html');
+
+echo '<body id="body" data-spy="scroll" data-target=".header">';
+
+load_html('html/header.html');
+
+load_html('html/promo.html');
+
+//========== PAGE LAYOUT ==========
+
+#load_html('html/about.html');
+
+#load_html('html/experience.html');
+
+#load_html('html/work.html');
+
+#load_html('html/clients.html');
+
+#load_html('html/promo_banner.html');
+
+load_html('html/contact.html');
+
+//--========== END PAGE LAYOUT ==========--
+
+load_html('html/footer.html');
+
+load_html('html/scripts.html');
+
+echo '</body>';
+echo '</html>';
+
 ?>
