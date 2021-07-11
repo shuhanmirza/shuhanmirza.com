@@ -89,7 +89,7 @@ load_html('html/promo.html');
 
 //========== PAGE LAYOUT ==========
 
-#load_html('html/about.html');
+load_html('html/about.html');
 
 #load_html('html/experience.html');
 
